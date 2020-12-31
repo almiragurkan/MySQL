@@ -21,7 +21,8 @@ two entities though and I’m exploring how much more it can be abstracted from 
 ● How many rows and columns do they contain?
 There are about 3 million rows and 49 columns total
 
-● https://www.kaggle.com/sobhanmoosavi/us-accidents/data
+● https://www.kaggle.com/sobhanmoosavi/us-accidents/data  (Dataset)
+
 ● https://bitbucket.org/U170709055/dblab2020/src/master/proje/
 
 2- Give a reasonably comprehensive and representative list of the English questions
