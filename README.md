@@ -50,7 +50,7 @@ you would like your system to be able to answer (find at least 10 questions).
     
 3- Design and show a relational data model (ER diagram) that you plan to use for your
 system.
-      You can find in resource code.
+      You can find in PROJECT source code.
 
 4- Write the SQL statements that will implement the English questions from
 your target queries (from Question 3). You will need to provide at least 1
