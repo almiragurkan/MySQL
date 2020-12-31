@@ -1,9 +1,12 @@
 # MySQL
 This repository includes about my Database experiences which are coded on MySQL.
+
 I worked different basic studies with MySql. 
+
 Finally, I worked in detail on a large data set.
 
 1- Explain your data:
+
 ● What’s the purpose of your project?
 Our data is about US accidents, the purpose of this project is to parse this data and generate
 useful reports for a variety of sections that can be analyzed using the sum of the accidents in
@@ -23,6 +26,7 @@ There are about 3 million rows and 49 columns total
 
 2- Give a reasonably comprehensive and representative list of the English questions
 you would like your system to be able to answer (find at least 10 questions).
+
       1. What is the maximum distance covered in an accident?
           333.630004883 miles
       2. Which city has the highest number of accidents?
@@ -46,10 +50,12 @@ you would like your system to be able to answer (find at least 10 questions).
     
 3- Design and show a relational data model (ER diagram) that you plan to use for your
 system.
+      You can find in resource code.
 
 4- Write the SQL statements that will implement the English questions from
 your target queries (from Question 3). You will need to provide at least 1
 aggregate function with group by.
+
       1- What is the maximum distance covered in an accident?
           SELECT max(distance)
           FROM Accident;
@@ -91,6 +97,7 @@ aggregate function with group by.
           accidentsNumber
           FROM Accident GROUP BY theZipCode
           order by accidentsNumber DESC limit 1;
+          
 5- Provide a proposal of how you will load the database with values. — If you plan to
 extract/import data from on-line sources, briefly describe what are the sources (e.g.
 personal data, or WWW URL's) and what any format conversion issues you expect to
@@ -103,6 +110,7 @@ servers. To import the data I’m gonna use the CSV file and use a modified vers
 script that imports the data to the database directly by making a connection and creating
 insert queries. For the moment, I’ve used the file to extract a portion of the dataset in order
 to test the queries I’ve created:
+
         const readline = require('readline');
         const fs = require('fs');
         const readInterface = readline.createInterface({
@@ -199,6 +207,7 @@ to test the queries I’ve created:
         fs.appendFile('Environment.csv', environment.join(',') + '\n', err => {
         });
         }
+        
 And just after that, I’m gonna create a REST API service with Java, C#, NodeJS or
 something similar. Most likely C# or NodeJS due to their non-blocking async features which
 can be really helpful in a single vCPU senario just like this one, but since there won’t be
