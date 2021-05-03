@@ -8,7 +8,7 @@ Finally, I worked in detail on a large data set (PROJECT10).
 1- Explain your data:
 
 ● What’s the purpose of your project?
-Our data is about US accidents, the purpose of this project is to parse this data and generate
+My data is about US accidents, the purpose of this project is to parse this data and generate
 useful reports for a variety of sections that can be analyzed using the sum of the accidents in
 this dataset, and identify which locations are most relevant to the dataset and which ones
 reduced the amount of accidents in a what timeframe as well as the average distances
